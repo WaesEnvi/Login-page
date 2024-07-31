@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,200&display=swap');
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body
+{
+	background: url(bg.gif);
+	background-attachment: fixed;
+	background-repeat: none;
+	background-size: cover;
+	overflow: hidden;
+}
+html 
+{
+	scroll-behavior: smooth;
+}
+.login
+{
+	backdrop-filter: blur(50px);
+	height: 350px;
+	width: 350px;
+	color: #fff;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	top: 50%;
+	left: 50%;
+	border-radius: 20px;
+	box-shadow: 5px 5px 50px skyblue;
+	padding: 50px 50px 50px;
+}
+.login h1
+{
+	text-align: center;
+	margin-bottom: 20px;
+}
+.login label
+{
+	text-align: left;
+	margin-bottom: 10px;
+}
+.login input
+{
+	outline:none;
+	border-radius: 10px;
+	border: none;
+	box-shadow: 5px 5px 50px wheat;
+	background: transparent;
+	height: 30px;
+	width: 100%;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	color: #fff;
+	font-size: 1.2em;
+}
+::placeholder
+{
+	color: #fff;
+	font-size: 0.8em;
+	text-align: center;
+}
+.login button
+{
+	background: transparent;
+	color: #fff;
+	font-size: 1.1em;
+	padding: 5px 12px 5px;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	margin-top: 20px;
+	border: none;
+	box-shadow: 5px 5px 50px purple;
+	border-radius: 10px;
+}
+.login h2 
+{
+	font-size: 0.9em;
+	font-weight: 500;
+	margin-top: 45px;
+	position: absolute;
+	left: 5%;
+}
+.login h5
+{
+	font-size: 0.9em;
+	font-weight: 500;
+	margin-top: 45px;
+	position: absolute;
+	right: 5%;
+}
+.login h5 a 
+{
+	color: #fff;
+	transition: 0.5s;
+	opacity: 80%;
+}
+.login h5 a:hover 
+{
+	color: #add8e6;
+}
+.forgotpass
+{
+	backdrop-filter: blur(50px);
+	height: 350px;
+	width: 350px;
+	color: #fff;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	top: 50%;
+	left: 150%;
+	border-radius: 20px;
+	box-shadow: 5px 5px 50px skyblue;
+	padding: 5px 50px 50px;	
+}
+.forgotpass h1
+{
+	text-align: center;
+	margin-bottom: 20px;
+}
+.forgotpass label
+{
+	text-align: left;
+	margin-bottom: 10px;
+}
+.forgotpass input
+{
+	outline:none;
+	border-radius: 10px;
+	border: none;
+	box-shadow: 5px 5px 50px wheat;
+	background: transparent;
+	height: 30px;
+	width: 100%;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	color: #fff;
+	font-size: 1.2em;
+}
+::placeholder
+{
+	color: #fff;
+	font-size: 0.8em;
+	text-align: center;
+}
+.forgotpass button
+{
+	background: transparent;
+	color: #fff;
+	font-size: 1.1em;
+	padding: 5px 12px 5px;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	margin-top: 20px;
+	border: none;
+	box-shadow: 5px 5px 50px purple;
+	border-radius: 10px;
+}
+h3
+{
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	left: 195%;
+	opacity: 0%;
+}
+.forgotpass h2 
+{
+	font-size: 0.9em;
+	font-weight: 500;
+	margin-top: 45px;
+	position: absolute;
+	left: 5%;
+	color: #fff;
+}
+h4 
+{
+	opacity: 0;
+}
+@media (max-width: 480px)
+{
+	.login {
+		transform: translate(-50%,-50%)scale(0.8);
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		background: #222;
+	}
+	.login h5,h2 a 
+	{
+		color: white;
+	}
+	.login button 
+	{
+		box-shadow: 1px 1px 10px white;
+	}
+	.forgotpass {
+		transform: translate(-50%,-50%)scale(0.8);
+		position: absolute;
+		top: 150%;
+		left: 50%;
+		display: block;
+
+	}
+	.forgotpass h2 a
+	{
+		color: white;
+	}
+	h3
+	{
+		opacity: 0%;
+		position: absolute;
+		top: 200%;
+		left: 50%;
+	}
+}

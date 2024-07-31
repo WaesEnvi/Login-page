@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="source.js"></script>
+</head>
+<body>
+	<div class="login">
+		<h1>Login</h1>
+		<form method="post" name="myform">
+			<label>Enter your name:</label><br>
+			<input type="text" placeholder="Name" required id="text" name="text"><br>
+			<label>Enter your password:</label><br>
+			<input type="Password" placeholder="Password" required id="pass" name="pass"><br>
+			<button type="submit" onclick="myfunction()">Submit</button>
+		</form>
+		<h2><a href="#reset" >Forgot Password</a></h2>
+		<h5><a href="#">New user? Sign up</a></h5>
+	</div>
+
+	<h3  id="reset">referenceeeeee</h3>
+	<h4 id="home">referenceeeeee2</h4>
+
+	<div class="forgotpass">
+		<h1>Reset Password</h1>
+		<form method="post" name="reset">
+			<label>Enter your old password:</label><br>
+			<input type="text" placeholder="Old password" required id="oldpassword"><br>
+			<label>Enter your new password:</label><br>
+			<input type="text" placeholder="New password" required id="newpassword"><br>
+			<label>Confirm new password:</label><br>
+			<input type="text" placeholder="Confirm new password" required id="confirmpassword"><br>
+			<button type="submit" onclick="resetpass()">Change</button>
+		</form>
+		<h2><a href="#home" >Return to Login page</a></h2>
+	</div>
+
+
+
+	
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
